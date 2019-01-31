@@ -5,6 +5,7 @@ installation of new servos. Before starting the designated control software
 for the whole robot, this sketch on an Arduino Nano with its related Shield
 allows testing each servo one-by-one for its allowed movement radius. Up to
 4 servos are supported. 
+
 The status is displayed on a small 20x2 character LCD, showing the current
 settings with its lower and upper limits of action radius. If the onboard
 LED is on, servos are ready to move and follow any change in position. By
@@ -13,8 +14,25 @@ are released from control (no PWM signal any more). This does protect the
 robot mechanics, if the servo turns in the wrong direction or is going to
 move beyond the mechanical boundaries of a joint.
  
-![Servo-Controller 2.0](./doc/ServoControllerV2.png)
+![Servo-Controller 2.0](./doc/ServoControllerV2.jpg)
 
+The new Servo-Controller does support 2 modes of operation:
+	* Direct Mode
+	* Limited Mode
+
+![Mode Select](./doc/ModeSelect.jpg)
+
+Direct Mode does allow control of 4 servos at the same time. Each potentiometer 
+gives a direct signal for the servo PWM controller.
+
+![Direct Mode](./doc/DirectMode.jpg)
+
+Limited Mode allows only control for 1 servo. The first 2 potentiometers are used
+to regulate the lower and upper limit of the movement area of the servo.
+The 3rd pot regulates velocity and the 4th pot the actual position.
+
+![Limited Mode](./doc/LimitedMode.jpg)
+ 
 Release Notes:
 	
 Version 2.0 - 29.08.2018
