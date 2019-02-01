@@ -1,4 +1,4 @@
-# Servo-Controller 2.0
+# Servo-Controller V2
 
 Arduino Nano based Servo-Controller used in my robotic projects after 
 installation of new servos. Before starting the designated control software
@@ -33,8 +33,18 @@ The 3rd pot regulates velocity and the 4th pot the actual position.
 
 ![Limited Mode](./doc/LimitedMode.jpg)
  
+The circuit schematic is quite simple. The only "strange" thing is the step-up
+module MT3608 which raises the 6V battery power to about 7.5V. This is 
+necessary, because the voltage regulation circuit from the Nano needs about 
+1V to function. The recommendation is a power supply not unter 7V.
+The MT3608 module is probably obsolete if you power the ServoControllerV2 
+with a 7.4V Lipo-Battery.
+
+![ServoControllerV2-Pinout](./doc/ServoControllerV2-Pinout.png)
+![ServoControllerV2-Schematics](./doc/ServoControllerV2-Schematics.png)
+
 Release Notes:
 	
 Version 2.0 - 29.08.2018
 
-	* Initial versions
+	* Initial version
