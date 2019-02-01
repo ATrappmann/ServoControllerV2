@@ -40,8 +40,8 @@ necessary, because the voltage regulation circuit from the Nano needs about
 The MT3608 module is probably obsolete if you power the ServoControllerV2 
 with a 7.4V Lipo-Battery.
 
-![ServoControllerV2-Pinout](./doc/ServoControllerV2-Pinout.png)
-![ServoControllerV2-Schematics](./doc/ServoControllerV2-Schematics.png)
+![ServoControllerV2-Pinout](./doc/ServoControllerV2-Pinout.PNG)
+![ServoControllerV2-Schematics](./doc/ServoControllerV2-Schematics.PNG)
 
 Release Notes:
 	
